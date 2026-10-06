@@ -1,0 +1,21 @@
+name: Évolution / documentation
+description: Proposer une évolution ou une tâche de documentation
+title: "[EVOLUTION] "
+labels: ["documentation"]
+body:
+  - type: textarea
+    id: objectif
+    attributes:
+      label: Objectif
+    validations: { required: true }
+  - type: textarea
+    id: perimetre
+    attributes:
+      label: Périmètre
+    validations: { required: true }
+  - type: checkboxes
+    id: criteres
+    attributes:
+      label: Critères de fin
+      options:
+        - label: à préciser dans chaque issue

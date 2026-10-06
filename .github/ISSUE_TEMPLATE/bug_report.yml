@@ -1,0 +1,33 @@
+name: Bug / incident
+description: Signaler un bug ou un incident en production
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: contexte
+    attributes:
+      label: Contexte
+    validations: { required: true }
+  - type: textarea
+    id: attendu
+    attributes:
+      label: Comportement attendu
+    validations: { required: true }
+  - type: textarea
+    id: observe
+    attributes:
+      label: Comportement observé
+    validations: { required: true }
+  - type: textarea
+    id: etapes
+    attributes:
+      label: Étapes de reproduction
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact / urgence
+    validations: { required: true }
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / éléments techniques
